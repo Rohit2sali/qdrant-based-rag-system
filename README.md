@@ -68,7 +68,7 @@ The application is exposed through an interactive Streamlit interface.
 ### ⚙️ Setup Instructions  
 
 1. Clone the repository  
-git clone https://github.com/Rohit2sali/rag-qdrant-pdf-chat.git  
+git clone https://github.com/Rohit2sali/qdrant-based-rag-system  
 cd rag-qdrant-pdf-chat  
   
 2. Create and activate a virtual environment  
