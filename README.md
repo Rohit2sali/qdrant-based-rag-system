@@ -55,32 +55,33 @@ The application is exposed through an interactive Streamlit interface.
 
 ## 📂 Project Structure
 .
-├── launch.py # Streamlit application entry point
-├── doc_processing.py/ # PDF preprocessing
-├── embeddings/ # Embedding generation logic
-├── retrieval/ # Qdrant indexing and retrieval
-├── llm/ # LLM interaction and prompting
-├── requirements.txt
-└── README.md
+├── launch.py # Streamlit application entry point  
+├── doc_processing.py/ # PDF preprocessing  
+├── embeddings/ # Embedding generation logic  
+├── retrieval/ # Qdrant indexing and retrieval  
+├── llm/ # LLM interaction and prompting  
+├── requirements.txt  
+└── README.md  
 
+---  
 
-## ⚙️ Setup Instructions
+### ⚙️ Setup Instructions  
 
-### 1. Clone the repository
-git clone https://github.com/Rohit2sali/rag-qdrant-pdf-chat.git
-cd rag-qdrant-pdf-chat
+1. Clone the repository  
+git clone https://github.com/Rohit2sali/rag-qdrant-pdf-chat.git  
+cd rag-qdrant-pdf-chat  
+  
+2. Create and activate a virtual environment  
+python -m venv venv  
+source venv/bin/activate   # Linux / Mac  
+venv\Scripts\activate      # Windows  
+  
+3. Install dependencies  
+pip install -r requirements.txt  
 
-2. Create and activate a virtual environment
-python -m venv venv
-source venv/bin/activate   # Linux / Mac
-venv\Scripts\activate      # Windows
+4. Start Qdrant  
+Using Docker:  
+docker run -p 6333:6333 qdrant/qdrant  
 
-3. Install dependencies
-pip install -r requirements.txt
-
-4. Start Qdrant
-Using Docker:
-docker run -p 6333:6333 qdrant/qdrant
-
-▶️ Run the Application
-streamlit run launch.py
+▶️ Run the Application  
+streamlit run launch.py  
