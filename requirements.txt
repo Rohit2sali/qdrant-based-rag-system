@@ -1,0 +1,11 @@
+streamlit>=1.32.0
+
+# Embeddings & reranking
+sentence-transformers>=2.6.0
+transformers>=4.38.0
+torch>=2.1.0
+
+# Vector database
+qdrant-client>=1.8.0
+
+
